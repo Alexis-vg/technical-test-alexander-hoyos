@@ -1,0 +1,47 @@
+.grid-of-sectors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+  padding: 15px;
+}
+.grid-of-our-partners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer {
+  display: grid;
+  column-gap: 30%;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: var(--darkish-blue);
+}
+footer .email {
+  grid-column: 2/3;
+}
+footer .email {
+  grid-column: 2/3;
+}
+footer .telephone {
+  grid-column: 2/3;
+}
+.social-networks {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  grid-template-columns: repeat(2, 50px);
+}
+.foundation-info__title {
+  font-size: 4rem;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.our-partners .persons {
+  width: 95%;
+  height: 350px;
+  object-fit: cover;
+}

@@ -1,0 +1,178 @@
+:root {
+  --darkish-blue: #10284d;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 300;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+header .navbar details ul {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  background-color: var(--darkish-blue);
+  width: 100%;
+  height: 320px;
+}
+header .desktop-navbar {
+  display: none;
+}
+header .navbar details ul a {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-decoration: none;
+  margin: 50px;
+}
+header .navbar figure {
+  margin: 15px;
+}
+header .navbar summary img {
+  width: 24px;
+  height: 24px;
+}
+.foundation-info {
+  background-image: url("../assets/images/chair_small.jpg");
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.foundation-info__title {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.introduction {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--darkish-blue);
+  color: white;
+  padding: 20px;
+}
+.introduction__title {
+  font-family: "Shippori Mincho", serif;
+}
+.bussiness-sector {
+  text-align: center;
+  padding: 15px;
+}
+.bussiness-sector .sector {
+  background-color: #f0f2f4;
+}
+.bussiness-sector .sector p {
+  padding: 0 20px;
+}
+.bussiness-sector .bussiness-sector__title {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.our-partners {
+  text-align: center;
+}
+.our-partners .persons {
+  width: 95%;
+  height: 350px;
+}
+.person1-container,
+.person2-container,
+.person3-container {
+  position: relative;
+}
+.person-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0; /* top bottom right left y con el position para que el background-color ocupe todo */
+  right: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none; /* para que no se vea */
+  color: white;
+  width: 90%;
+}
+.person1-container:hover .person-overlay {
+  display: flex;
+  flex-direction: column;
+}
+.person2-container:hover .person-overlay {
+  display: flex;
+  flex-direction: column;
+}
+.person3-container:hover .person-overlay {
+  display: flex;
+  flex-direction: column;
+}
+.news-and-updates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.news-and-updates .library-photo {
+  margin: 0;
+}
+.news-and-updates .library-photo img {
+  width: 100%;
+  height: 50vh;
+  vertical-align: bottom;
+  object-fit: cover;
+}
+.news-and-updates .beauty-phrase {
+  font-size: 2rem;
+  color: #465976;
+}
+.news-and-updates .phrase-credits {
+  color: #015989;
+  margin-bottom: 15px;
+}
+.news-and-updates .countdown {
+  font-size: 2.8rem;
+  font-weight: 700;
+  padding: 20px;
+}
+footer {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: var(--darkish-blue);
+}
+.blue-logo-container {
+  margin: 0;
+}
+footer .copyrigth {
+  color: #667996;
+}
+footer .facebook-logo {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url("../assets/icons/facebook.svg");
+  background-size: cover;
+  margin-right: 15px;
+}
+footer .github-logo {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url("../assets/icons/github.svg");
+  background-size: cover;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
