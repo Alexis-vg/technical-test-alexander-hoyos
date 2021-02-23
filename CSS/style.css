@@ -69,6 +69,10 @@ header .navbar summary img {
   text-align: center;
   padding: 15px;
 }
+.grid-of-sectors .sector {
+  padding: 10px;
+  margin: 15px;
+}
 .bussiness-sector .sector {
   background-color: #f0f2f4;
 }
